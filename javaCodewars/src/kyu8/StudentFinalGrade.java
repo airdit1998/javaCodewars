@@ -12,6 +12,16 @@ This function should return a number (final grade). There are four types of fina
 75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.
 0, in other cases
 Examples(Inputs-->Output):
+
+=========BEST PRACTICE=========
+
+public class StudentFinalGrade{
+    public static int finalGrade(int exam, int projects){
+        return (exam > 90 || projects > 10) ? 100 :
+               (exam > 75 && projects > 4)  ? 90  :
+               (exam > 50 && projects > 1)  ? 75  : 0;
+    }
+}
  */
 
 package kyu8;
