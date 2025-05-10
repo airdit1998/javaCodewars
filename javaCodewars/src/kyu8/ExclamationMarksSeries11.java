@@ -15,8 +15,7 @@ package kyu8;
 public class ExclamationMarksSeries11 {
     public static void main(String[] args) {
         String ts = "aeiou";
-        String t = replace(ts);
-        System.out.println(t);
+        System.out.println(replace(ts));
     }
 
     public static String replace(final String s) {
